@@ -3,14 +3,14 @@ Napisz krótką grę w której masz 5 ruchów w jedną stronę poprzez KOMNATĘ.
 
 Za każdym razem masz szansę spotkać po drodzę skrzynkę lub NIC.
 
-Skrzynki mają różne kolory.
+Boxes got difrrents color.
 
-Kolor skrzynki oznacza jak rzadka jest ta skrzynka.
+Color of the box means how rare is the box.
 
-zielona - 75%
-pomarańczowa - 20%
-fioletowa - 4%
-złota (legendarna) - 1%
+green - 75%
+orange  - 20%
+purple - 4%
+gold (legedary) - 1%
 
 Ustaw, że jest 40% szansy, że nie spotkasz niczego. 60%, że będzie skrzynka.
 
