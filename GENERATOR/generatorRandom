@@ -1,0 +1,28 @@
+""""
+ Generator  numbers multipled by itself
+
+"""
+
+
+def number_multipled_by_itself_generator():
+    number = 0
+    while True:
+        number = number + 1
+        yield number * number
+
+
+numberGenerator = number_multipled_by_itself_generator()
+generatorNumbers = []
+
+
+for k in range(30):
+    generatorNumbers.append(next(numberGenerator))
+
+
+print(generatorNumbers)
+print("range 20")
+print("range 30")
+for k in range(30):
+    generatorNumbers.append(next(numberGenerator))
+
+print(generatorNumbers)
