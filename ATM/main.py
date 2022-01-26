@@ -11,10 +11,6 @@ while True:
         m.deposit()
     if choice == "3":
         isSuccesful = m.try_withdraw()
-        if isSuccesful:
-            print("spoko")
-        else:
-            print("Jestes biedakiem")
     if choice == "4":
         m.exit()
         quit()
