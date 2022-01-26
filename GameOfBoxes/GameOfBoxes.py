@@ -1,34 +1,23 @@
 """
-Napisz krótką grę w której masz 5 ruchów w jedną stronę poprzez KOMNATĘ.
+Write a short game in which you have 5 moves one way through the CHAMBER.
 
-Za każdym razem masz szansę spotkać po drodzę skrzynkę lub NIC.
+Every time you have the chance to meet dear box or NOTHING
 
-Skrzynki mają różne kolory.
+The boxes have different colors.
 
-Kolor skrzynki oznacza jak rzadka jest ta skrzynka.
+The color of the box indicates how rare the box is.
+green   - 75%
+orange - 20%
+purple - 4%
+gold (legendary) - 1%
 
-zielona - 75%
-pomarańczowa - 20%
-fioletowa - 4%
-złota (legendarna) - 1%
+Set that there is a 40% chance that you will not meet anything,
+60% that will be a box. Set gold as what can "fall out" of the box:
 
-Ustaw, że jest 40% szansy, że nie spotkasz niczego. 60%, że będzie skrzynka.
-
-Ustaw złoto jako to co może "wypaść" ze skrzynki:
-zielony - 1000,
-pomaranczowy - 4000,
-fioletowy - 9000,
-zlota - 16000
-
-1 1 0+1
-4 2 1 +1
-9 3 2+1
-16 4 3 +1
-
-Pamiętaj o:
-1) czystym kodzie
-2) nazywaniu zmiennych tak by bylo samoopisujace sie
-3) spróbuj napisać program po angielsku
+green - 1000,
+orange  - 4000,
+purple - 9000,
+gols - 16000
 
 """
 import random
