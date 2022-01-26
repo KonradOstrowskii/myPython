@@ -5,7 +5,7 @@ Za każdym razem masz szansę spotkać po drodzę skrzynkę lub NIC.
 
 Skrzynki mają różne kolory.
 
-Kolor skrzynki oznacza jak rzadka jest ta skrzynka.
+Color of the box means how rare is the box.
 
 zielona - 75%
 pomarańczowa - 20%
