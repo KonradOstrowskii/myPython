@@ -41,10 +41,10 @@ Colours = Enum('Colour ', {'Green': 'VeryCommon',
                )
 
 chestColoursDictionary = {
-    Colours.Green:  75,
+    Colours.Green: 75,
     Colours.Orange: 20,
     Colours.Purple: 4,
-    Colours.Gold:   1
+    Colours.Gold: 1
 }
 chestColourList = tuple(chestColoursDictionary.keys())
 chestColourProbability = tuple(chestColoursDictionary.values())
