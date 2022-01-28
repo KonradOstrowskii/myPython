@@ -10,7 +10,7 @@ while True:
     if choice == "2":
         m.deposit()
     if choice == "3":
-        m.withdraw()
+        m.try_withdraw()
     if choice == "4":
         m.exit()
         quit()
