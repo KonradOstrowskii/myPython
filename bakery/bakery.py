@@ -42,11 +42,6 @@ cake4 = cake('Super Sweet Maringue', 'meringue', 'very sweet', [], '')
 cake5 = cake('Cocoa waffle', 'waffle', 'cocoa', [], 'cocoa')
 
 
-bakery_offer = []
-bakery_offer.append(cake1)
-bakery_offer.append(cake2)
-bakery_offer.append(cake3)
-
 print("Today in our offer:")
 for c in cake.bakery_offer:
     c.show_info()
