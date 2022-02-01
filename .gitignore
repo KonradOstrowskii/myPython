@@ -2,3 +2,10 @@ __pycache__/
 trainngClass
 my_site
 
+my_env/Scripts/python.exe
+mysite/manage.py
+mysite/mysite/asgi.py
+mysite/mysite/urls.py
+mysite/mysite/wsgi.py
+mysite/mysite/settings.py
+mysite/mysite/__init__.py
