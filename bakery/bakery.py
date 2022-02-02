@@ -56,6 +56,18 @@ class cake:
         else:
             print('>>>>>Text can be set only for cake ({})'.format(self.name))
 
+    def __str__(self):
+        return "{} - {} with {} filled with {}".format(self.kind, self.name, self.additives, self.filling)
+
+    def __iadd__(self, other):
+        if type(other) is str:
+            self.additives.append(other)
+            return self
+        elif type(other) is list:
+            self.additives.extend(other)
+        else:
+            raise Exception('sorry this operation is not implement')
+
     Text = property(__get_text, __set_text, None, 'Text on the cake')
 
 
