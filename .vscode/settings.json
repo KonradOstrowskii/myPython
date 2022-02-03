@@ -1,5 +1,5 @@
 {
-  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Enabled": false,
   "python.linting.enabled": true,
   "python.linting.flake8Args": [
     "--ignore=W292,W293,W391"
