@@ -22,7 +22,7 @@ class Cake:
         if len(self.additives) > 0:
             print("Additives:")
             for a in self.additives:
-                print("\t\t{}".format(a))
+                print("-{}".format(a))
         if len(self.filling) > 0:
             print("Filling:        {}".format(self.filling))
         print('-' * 20)
