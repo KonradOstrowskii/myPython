@@ -38,21 +38,32 @@ class Menu:
         print("4.Exit")
 
     def deposit(self):
-        amount = int(input("Enter amount to be Deposited: "))
-        self.balance += amount
-        print(True, "Amount Deposited:", amount)
-        print(self.balance)
-        self.printMenu()
+        try:
+            amount = int(input("Enter amount to be Deposited: "))
+            self.balance += amount
+            print(True, "Amount Deposited:", amount)
+            print("Your balance is : ", self.balance, "$")
+            self.printMenu()
+        except Exception as e:
+            print("Sorry there was and Issue with Details:\n{}  ".format(e))
+            print("Put only  int digits here")
+        finally:
+            print("Please, Try Again")
 
     def try_withdraw(self):
-        amount = int(input("Enter amount to be Withdrawn: "))
-        if (self.balance >= amount):
-            self.balance - amount
-            print("You Withdrew: ", amount)
-            return True
-        else:
+        try:
+            amount = int(input("Enter amount to be Withdrawn: "))
+            if (self.balance >= amount):
+                self.balance - amount
+                print("You Withdrew: ", amount)
+                return True
+        except Exception as e:
+            print("Sorry there was and Issue with {}  ".format(e))
+            print("Put only digits here")
             print("Insufficient balance  ", self.balance)
             return False
+        finally:
+            print("Please, Try Again")
 
     def bilans(self, balance=1000):
         print("You balance is : ", self.balance)
