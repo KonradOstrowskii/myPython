@@ -4,9 +4,7 @@ m = Menu()
 choice = 0
 while True:
     choice = input("Your next step :")
-    if choice != '1' or '2' or '3' or '4':
-        print("Please, use INT from Menu")
-    elif choice == "1":
+    if choice == "1":
         m.bilans()
         continue
     elif choice == "2":
