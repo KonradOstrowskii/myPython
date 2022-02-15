@@ -3,7 +3,8 @@ question_promts = [
     "Who created the cryptocurrency Bitcoin?\n (a) Satoshi Nakamoto \n (b) Vitalik Buterin \n (c) Anonymous\n ",
     "What is the opposite of 'HOLDING' (slang term)?\n (a)Panic Selling\n (b)Acuumulate after TGE \n (c)Dont selling\n ",
     "After Bitcoin, Ether which are the biggest crypto coins\n (a) Binance_Coin\n (b) Shiba-Inu\n (c) Tether\n",
-    "What is maximum circulation of Bitcoin\n (a) Unlimited\n (b) 21mln\n (c) 100mln\n"]
+    "What is maximum circulation of Bitcoin\n (a) Unlimited\n (b) 21mln\n (c) 100mln\n",
+    "Wich one is biggest Exchange?\n (a) KuCoin\n (b) CoinBase\n (c) Binance\n"]
 
 
 questions = [
@@ -11,6 +12,7 @@ questions = [
     Question(question_promts[1], "a"),
     Question(question_promts[2], "c"),
     Question(question_promts[3], "b"),
+    Question(question_promts[4], "c")
 
 
 ]
