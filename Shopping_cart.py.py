@@ -48,7 +48,7 @@ class Menu:
                     1.Check all avaible items
                     2.Shopping Cart
                     3.Add Items
-                    4.Remove Items/Clear Cart
+                    4.Remove Items
                     5.Exit
                     What's Your next step :""")
                          
@@ -70,7 +70,7 @@ while True:
         print(jack.vat_calculate()) 
     
     if choice =="2":
-        print("Your shopping_cart contains",shopping_cart," value is",cart_value," PLN , the tax is",calculate_value_vat_cart(cart_value),"PLN")        
+        print("Your shopping cart contains",shopping_cart," value is",cart_value," PLN , the tax is",calculate_value_vat_cart(cart_value),"PLN")        
     
     if choice == "3":
         while True:
@@ -96,7 +96,7 @@ while True:
            
     if choice == "4":
         print("You shopping_cart",shopping_cart)
-        o = input("Would you like to remove [hdmi,vga,jack] from your inventory?")
+        o = input("Would you like to remove [hdmi,vga,jack] from your inventory?q for back to the main menu")
         if o == "hdmi":
             hdmi.stock += 1
             shopping_cart.remove('HDMI')
@@ -109,9 +109,10 @@ while True:
             jack.stock += 1
             shopping_cart.remove('JACK')
             cart_value -= 40
+        
             
         
-        if o == "n":
+        if o == "q":
             Menu()
        
             
