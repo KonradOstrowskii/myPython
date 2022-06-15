@@ -1,4 +1,5 @@
-from CreatingUser import User
+from User import User
+
 class Stock:
     def __init__(self,name : str,current_price : float ,stock : int):
         """
@@ -41,8 +42,14 @@ jack = Stock("jack",40,40)
  
            
 class Menu:
-    
     def __init__(self):
+        accuount=input("Would you like to create a new account (y/n),or continue as a guest? : ")
+        if accuount == "y":
+            User.register(User)
+            Menu.menu(Menu)
+        else:
+            Menu.menu(Menu)   
+    def menu(self):
         print("""
                 Menu: 
                     1.Check all avaible items
@@ -118,4 +125,3 @@ while True:
             
     if choice == "5":
         print("GoodBye see you!")
-        break
