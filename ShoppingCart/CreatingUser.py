@@ -17,6 +17,6 @@ class User():
         
 x = User.register(User)
 
-print(x.__init__)
+
 
     
