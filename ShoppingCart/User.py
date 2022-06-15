@@ -15,7 +15,7 @@ class User():
         self.pass_check = input("Enter password: ")
         self.email = input("Enter email: ")
         
-x = User.register(User)
+
 
 
 
