@@ -1,4 +1,4 @@
-
+from CreatingUser import User
 class Stock:
     def __init__(self,name : str,current_price : float ,stock : int):
         """
