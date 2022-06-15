@@ -22,7 +22,8 @@ class Menu:
                     2.Shopping Cart
                     3.Add Items
                     4.Remove Items
-                    5.Exit
+                    5.Login
+                    6.Exit
                     What's Your next step :""")
                          
 
@@ -30,19 +31,9 @@ choice = 0
 
 shopping_cart = []
 cart_value = 0 
-accuount=input("Would you like to create a new account (y),continue as a guest(g) , or log into Your account(l)? : ")
+
 while True:  
-    
-    if accuount == "y":
-        User.register(User)
         Menu.menu(Menu)
-    if accuount == "l":
-        User.login(User)
-    if accuount == "g":
-        Menu.menu(Menu)   
-        
-            
-            
         choice = input("Your next step :")
         if choice =="1":
             print(hdmi.avaible_stock())
@@ -97,8 +88,20 @@ while True:
                 
             if o == "q":
                 Menu()
+        
+        if choice == "5":   
+            
+            accuount=input("Would you like to create a new account (y) or log into Your account(l)?(q)for back to main menu : ") 
+            if accuount == "l":
+                User.login(User)
+                Menu.menu(Menu)
+            elif accuount == "y":
+                User.register(User)
+                Menu.menu(Menu)
+            elif accuount == "q":
+                Menu.menu(Menu)
             
                     
-        if choice == "5":
+        if choice == "6":
             print("GoodBye see you!")
             break
