@@ -1,4 +1,5 @@
-from User import User
+
+from User import Admin,User
 from Stock import Stock
 from Menu import Menu
 
@@ -84,7 +85,7 @@ while True:
             accuount=input("Would you like to create a new account (y) or log into Your account(l)?(q)for back to main menu : ") 
             if accuount == "l":
                 User.login(User)
-                Menu.menu(Menu)
+               
             elif accuount == "y":
                 User.register(User)
                 Menu.menu(Menu)
