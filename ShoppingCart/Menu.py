@@ -1,3 +1,10 @@
+
+from User import *
+from Stock import Stock
+
+
+
+
 class Menu:
       
     def menu(self):
@@ -10,3 +17,15 @@ class Menu:
                     5.Login
                     6.Exit
                     What's Your next step :""")
+        
+        
+class AdminMenu(Stock):  
+    def admin_menu(self):
+        print(""""
+              1.remove user
+              2.add user
+              3.decrement stock
+              4.increase stock
+              """)
+        
+            

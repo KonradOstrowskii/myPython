@@ -27,3 +27,4 @@ class Stock:
     def decrement_stock(self):
         self.stock -= 1
         return self.avaible_stock
+  

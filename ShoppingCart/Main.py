@@ -1,7 +1,7 @@
 
-from User import Admin,User
+from User import  *
 from Stock import Stock
-from Menu import Menu
+from Menu import Menu,AdminMenu
 
 
 def calculate_value_vat_cart(x : float):
@@ -91,8 +91,43 @@ while True:
                 Menu.menu(Menu)
             elif accuount == "q":
                 Menu.menu(Menu)
-            
-                    
+        
+        if choice == "7":
+            AdminMenu.admin_menu(AdminMenu)
+            chose = input("Enter your choice: ")
+            if chose == "1":
+                pass
+            if chose == "2":   
+                pass
+            if chose == "3":   
+                x = int(input("what item You want to decrement 1.HDMI 2.VGA 3.JACK :"))
+                if x == 1:
+                    x = int(input("Enter the value to decrement: "))
+                    AdminUser.decrement_stock_by_admin(hdmi,x)
+                    Menu.menu(Menu)
+                if x == 2: 
+                    x = int(input("Enter the value to decrement: "))
+                    AdminUser.decrement_stock_by_admin(vga,x)
+                    Menu.menu(Menu) 
+                if x == 3:
+                    x = int(input("Enter the value to decrement: "))
+                    AdminUser.decrement_stock_by_admin(jack,x)
+                    Menu.menu(Menu)
+            if chose == "4":
+                x = int(input("what item You want to decrement 1.HDMI 2.VGA 3.JACK :"))
+                if x == 1:
+                    x = int(input("Enter the value to decrement: "))
+                    AdminUser.increase_stock_by_admin(hdmi,x)
+                    Menu.menu(Menu)
+                if x == 2:
+                    x = int(input("Enter the value to decrement: "))
+                    AdminUser.increase_stock_by_admin(vga,x)
+                    Menu.menu(Menu)
+                if x == 3:
+                    x = int(input("Enter the value to decrement: "))
+                    AdminUser.increase_stock_by_admin(jack,x)
+                    Menu.menu(Menu)
+                        
         if choice == "6":
             print("GoodBye see you!")
             break

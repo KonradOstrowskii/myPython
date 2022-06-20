@@ -1,5 +1,5 @@
 from Menu import Menu
-
+from Stock import Stock
 
 class User:
     def __init__(self, username, password, email):
@@ -42,24 +42,11 @@ class User:
         with open("UserRegister.txt", "a+", encoding='utf-8') as file:
                 file.write('Username:'+ self.username +' '+ 'Password:'+
                     self.password+' '+ 'email:'+ self.email + '\n')                    
-class Admin:
+class AdminUser(Stock):
     def __init__(self, username, password, email):
         self.username = username
         self.password = password
         self.email = email
-            
-                       
-                                
-            
-                            
-            
-                        
-                    
-           
-            
-
-        
-
     def register(self):
         self.username = input("Enter username: ")
         self.password = input("Enter password: ")
@@ -68,4 +55,19 @@ class Admin:
         with open("UserRegister.txt", "a+", encoding='utf-8') as file:
                 file.write('Username:'+ self.username +' '+ 'Password:'+
                            self.password+' '+ 'email:'+ self.email + '\n')
+    
+            
+    def decrement_stock_by_admin(self,x):
+        x = int(input("Enter the value to decrement: "))
+        self.stock -= x
+        return self.avaible_stock
+        
+            
+        
+    def increase_stock_by_admin(self,x):
+        x = int(input("Enter the value to increase :"))
+        self.stock += x
+        return self.avaible_stock
+
+
     
